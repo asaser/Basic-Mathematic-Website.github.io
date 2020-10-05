@@ -7,5 +7,5 @@ function reverseString(r) {
     //return r.split("").reverse().join("");
 }
 
-alert("Reverse Word Sort");
+alert("Reverse Word Sort: javascript");
 alert(reverseString("javascript"));
