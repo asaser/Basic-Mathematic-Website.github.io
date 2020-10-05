@@ -1,20 +1,26 @@
 function fibonaci(n) {
-  if (n == 1 || n == 2) {
+  if (n === 1 || n === 2) {
 
     return 1;
 
-  } else if (n == 0) {
+  } else if (n === 0) {
 
     return 0;
 
   } else if ( n > 2) {
 
-    let a = fibonaci(n-2);
-    let b = fibonaci(n-1);
+    let first = 1;
+    let second = 1;
+    let third = 0;
 
-    let result = a + b;
+      for (var i = 0; i < n - 2; i++) {
+      third = first + second;
+      first = second;
+      second = third;
+  }
 
-    return result;
+  return third;
+
   }
 }
 
