@@ -1,11 +1,13 @@
 function reverseString(r) {
-    var array = r.split("");
+    let array = r.split('');
     array.reverse();
-    var border = array.join("");
-    return border;
-
-    //return r.split("").reverse().join("");
+    let border = array.join('');
+    return border;    
 }
 
-alert("Reverse Word Sort: javascript");
-alert(reverseString("javascript"));
+function showText() {
+    let r = document.getElementById("writeWord").value;
+    let reverseLetter = reverseString(r);
+    let resultText = reverseLetter;
+    document.getElementById("message").innerHTML = resultText;
+}
