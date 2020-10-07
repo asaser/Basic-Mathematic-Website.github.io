@@ -4,8 +4,11 @@ function sortedLettersByAlphabet(s) {
     var border = sorted.join("");
     return border;
 
-    // return s.split("").sort().join("");
-
 }
-alert("Word sorted: javascript");
-alert(sortedLettersByAlphabet("javascript"));
+
+function showAlphabetText() {
+    let s = document.getElementById("writeNewWord").value;
+    let callAlphabetFunction = sortedLettersByAlphabet(s);
+    
+    document.getElementById("message").innerHTML = callAlphabetFunction;
+}
