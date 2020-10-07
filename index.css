@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(180, 42, 42);
+}
+
+/*START Counting Down Text */
+
+#mainHeader .animation {
+    position: relative;
+    box-sizing: border-box;
+    background-color: #000;
+    width: 100%;
+    height: 200px;
+    font-size: 3em;
+    color:rgb(180, 42, 42);
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+.animation::before {
+    position: absolute;
+    content: " ";
+    animation-duration: 5s;
+    animation-name: liczenie;
+    animation-iteration-count: infinite;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    top: 30%;
+}
+
+@keyframes liczenie {
+    0% {
+        content: "Start";
+    }
+
+    20% {
+        content: "Show";
+    }
+
+    40% {
+        content: "All";
+    }
+
+    60% {
+        content: "Small";
+    }
+
+    80% {
+        content: "Java Script";
+    }
+
+    100% {
+        content: "Projects";
+    }
+}
+
+/* FINISH Counting Down Text */
