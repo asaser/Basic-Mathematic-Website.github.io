@@ -43,11 +43,15 @@ function showAlphabetText() {
     let s = document.getElementById("writeNewWord").value;
     let callAlphabetFunction = sortedLettersByAlphabet(s);
     
-    document.getElementById("message").innerHTML = callAlphabetFunction;
+    document.getElementById("alphabetMessageThree").innerHTML = callAlphabetFunction;
 }
 
 // FINISH Sort Letters By Alphabet
 
+
+// START Fibonacci
+
+// FINISH Fibonacci
 
 
 // START Reverse Sort Letters
@@ -62,7 +66,7 @@ function showText() {
     let r = document.getElementById("writeWord").value;
     let reverseLetter = reverseString(r);
     let resultText = reverseLetter;
-    document.getElementById("message").innerHTML = resultText;
+    document.getElementById("reverseMessageThree").innerHTML = resultText;
 }
 
 // FINISH Reverse Sort Letters
