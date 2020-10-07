@@ -1,0 +1,50 @@
+/* START Elements Elevator */
+
+.Elements_Up {
+    height: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.Elements_Down {
+    height: 30px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.color {
+    color: transparent;
+    height: 80px;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.darkblue {
+    background-color: darkblue;
+}
+
+.purple {
+    background-color: purple;
+}
+
+/* FINISH Elements Elevator */
+

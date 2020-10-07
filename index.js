@@ -29,6 +29,43 @@ function finishCount() {
 
 // FINISH Sum and Multi
 
+//////////////////////////////////////////////////////////////////////////////
+
+// START Fibonacci
+function fibonaci(n) {
+    if (n === 1 || n === 2) {
+
+        return 1;
+
+    } else if (n === 0) {
+
+        return 0;
+
+    } else if (n > 2) {
+
+        let first = 1;
+        let second = 1;
+        let third = 0;
+
+        for (var i = 0; i < n - 2; i++) {
+            third = first + second;
+            first = second;
+            second = third;
+        }
+
+        return third;
+
+    }
+}
+
+function showNumber() {
+    let n = document.getElementById("newText").value;
+    let calculate = fibonaci(n);
+    let resultNumber = calculate;
+    document.getElementById("fibonacciMessageThree").innerHTML = resultNumber;
+}
+
+// FINISH Fibonacci
 
 // START Sort Letters By Alphabet
 function sortedLettersByAlphabet(s) {
@@ -42,24 +79,20 @@ function sortedLettersByAlphabet(s) {
 function showAlphabetText() {
     let s = document.getElementById("writeNewWord").value;
     let callAlphabetFunction = sortedLettersByAlphabet(s);
-    
+
     document.getElementById("alphabetMessageThree").innerHTML = callAlphabetFunction;
 }
 
 // FINISH Sort Letters By Alphabet
 
-
-// START Fibonacci
-
-// FINISH Fibonacci
-
+//////////////////////////////////////////////////////////////////////////////
 
 // START Reverse Sort Letters
 function reverseString(r) {
     let array = r.split('');
     array.reverse();
     let border = array.join('');
-    return border;    
+    return border;
 }
 
 function showText() {
@@ -70,3 +103,5 @@ function showText() {
 }
 
 // FINISH Reverse Sort Letters
+
+//////////////////////////////////////////////////////////////////////////////
