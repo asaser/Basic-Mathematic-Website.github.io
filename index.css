@@ -13,6 +13,7 @@
 
 .textArea {
     margin: 0px 30% 10px 30%;
+    background-color: rgb(181, 177, 186)
 }
 
 .butttonArea {
@@ -23,11 +24,11 @@
 #mainHeader .animation {
     position: relative;
     box-sizing: border-box;
-    background-color: #000;
+    background-color: rgb(117, 41, 41);
     width: 100%;
     height: 200px;
     font-size: 3em;
-    color: rgb(180, 42, 42);
+    color: rgb(0, 0, 0);
     font-weight: bold;
     display: block;
     text-align: center;
@@ -46,23 +47,23 @@
 
 
 .calculateStyle {
-    background-color: rgb(181, 106, 8);
+    background-color: rgba(177, 117, 39, 0.809)
 }
 
 .fibonacciStyle {
-    background-color: rgb(98, 94, 94);
+    background-color: rgba(58, 23, 198, 0.408);
 }
 
 .modificationStyle {
-    background-color: rgb(68, 49, 147);
+    background-color: rgba(177, 117, 39, 0.809)
 }
 
 .logicGameStyle {
-    background-color: rgb(181, 106, 8);
+    background-color: rgba(58, 23, 198, 0.408);
 }
 
 .calculatorStyle {
-    background-color: rgb(98, 94, 94);
+    background-color: rgba(177, 117, 39, 0.809)
 }
 
 

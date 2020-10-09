@@ -21,10 +21,74 @@ function finishCount() {
     ];
 
     let sum = Number(writeNumber[0]) + Number(writeNumber[1]) + Number(writeNumber[2]) + Number(writeNumber[3]);
-    document.getElementById("sumMessageTwo").innerHTML = sum;
+    document.getElementById("sumMessageOne").innerHTML = sum;
 
-    let multi = Number(writeNumber[0]) * Number(writeNumber[1]) * Number(writeNumber[2]) * Number(writeNumber[3]);
-    document.getElementById("multiMessageOne").innerHTML = multi;
+
+    if (Number(writeNumber[0]) == '') {
+        let multi = Number(writeNumber[1]) * Number(writeNumber[2]) * Number(writeNumber[3]);
+        document.getElementById("multiMessageTwo").innerHTML = multi;
+
+    } 
+    else if (Number(writeNumber[1]) == '') {
+        let multi = Number(writeNumber[0]) * Number(writeNumber[2]) * Number(writeNumber[3]);
+        document.getElementById("multiMessageTwo").innerHTML = multi;
+
+    } else if (Number(writeNumber[2]) == '') {
+        let multi = Number(writeNumber[0]) * Number(writeNumber[1]) * Number(writeNumber[3]);
+        document.getElementById("multiMessageTwo").innerHTML = multi;
+
+    } else if (Number(writeNumber[3]) == '') {
+        let multi = Number(writeNumber[0]) * Number(writeNumber[1]) * Number(writeNumber[2]);
+        document.getElementById("multiMessageTwo").innerHTML = multi;
+
+    } else if (Number(writeNumber[0]) =='' && Number(writeNumber[1]) == '') {
+        let multi = Number(writeNumber[2]) * Number(writeNumber[3]);
+        document.getElementById("multiMessageTwo").innerHTML = multi;
+
+    // } else if (Number(writeNumber[0])  && Number(writeNumber[2]) == '') {
+    //     let multi = Number(writeNumber[1]) * Number(writeNumber[3]);
+    //     document.getElementById("multiMessageTwo").innerHTML = multi;
+
+    // } else if (Number(writeNumber[0]) && Number(writeNumber[3]) == '') {
+    //     let multi = Number(writeNumber[1]) * Number(writeNumber[2]);
+    //     document.getElementById("multiMessageTwo").innerHTML = multi;
+
+    // } else if (Number(writeNumber[0]) && Number(writeNumber[1]) && Number(writeNumber[2]) == '') {
+    //     let multi = Number(writeNumber[3]);
+    //     document.getElementById("multiMessageTwo").innerHTML = multi;
+
+    // } else if (Number(writeNumber[0]) && Number(writeNumber[1]) && Number(writeNumber[3]) == '') {
+    //     let multi = Number(writeNumber[2]);
+    //     document.getElementById("multiMessageTwo").innerHTML = multi;
+
+    //     document.getElementById("multiMessageTwo").innerHTML = multi;
+    // } else if (Number(writeNumber[1]) && Number(writeNumber[2]) && Number(writeNumber[3]) == '') {
+    //     let multi = Number(writeNumber[0]);
+    //     document.getElementById("multiMessageTwo").innerHTML = multi;
+
+    // } else if (Number(writeNumber[1]) && Number(writeNumber[2]) == '') {
+    //     let multi = Number(writeNumber[0]) * Number(writeNumber[3]);
+    //     document.getElementById("multiMessageTwo").innerHTML = multi;
+
+    // } else if (Number(writeNumber[1]) && Number(writeNumber[3]) == '') {
+    //     let multi = Number(writeNumber[0]) * Number(writeNumber[2]);
+    //     document.getElementById("multiMessageTwo").innerHTML = multi;
+
+    // } else if (Number(writeNumber[2]) && Number(writeNumber[3])== '') {
+    //     let multi = Number(writeNumber[2]) * Number(writeNumber[3]);
+    //     document.getElementById("multiMessageTwo").innerHTML = multi;
+
+    // } else if ( Number(writeNumber[0]) && Number(writeNumber[1]) && Number(writeNumber[2]) && Number(writeNumber[3]) == '') {
+    //     let multi = 0;
+    //     document.getElementById("multiMessageTwo").innerHTML = multi;
+
+    } else {
+        let multi = Number(writeNumber[0]) * Number(writeNumber[1]) * Number(writeNumber[2]) * Number(writeNumber[3]);
+        document.getElementById("multiMessageTwo").innerHTML = multi;
+    }
+
+    // let multi = Number(writeNumber[0]) * Number(writeNumber[1]) * Number(writeNumber[2]) * Number(writeNumber[3]);
+    // document.getElementById("multiMessageTwo").innerHTML = multi;
 }
 
 // FINISH Sum and Multi
