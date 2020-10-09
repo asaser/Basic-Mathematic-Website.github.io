@@ -94,3 +94,74 @@
 }
 
 /* FINISH Counting Down Text */
+
+
+/* START Calculator */
+
+.main {
+    background-image: linear-gradient(to top left, #91d6fd, #04409b);
+    height: 100vh;
+}
+
+.calculator {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 50px ridge #8f6f57;
+    border-radius: 50px;
+
+}
+
+.forms {
+    padding-bottom: 2px;
+}
+
+.forms .forms_score {
+    position: relative;
+    width: 548px;
+    padding: 25px;
+    margin: 3px 2px 3px 2px;
+    /* border-style: outset; */
+    background-color: #ddc1a0;
+}
+
+.calculator .digits {
+position: relative;
+}
+
+.digits .button {
+    height: 90px;
+    width: 90px;
+    border-style: solid;
+    border-color: #251717;
+    margin: 1px;
+}
+
+.button {
+    text-align: center;
+    justify-items: center;
+}
+
+/* .digits .columns {
+    height: 92px;
+} */
+
+
+.digits .long {
+    width: 182px;
+}
+
+.digits .button_darker {
+    background-color:#856244;
+}
+
+.digits .button_lighter {
+    background-color: #c79b75;
+}
+
+.digits .button_custom {
+    background-color: #fff2e7;
+}
+
+/* FINISH Calculator */
