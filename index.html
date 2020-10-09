@@ -15,7 +15,6 @@
 <body>
 
     <!-- Main navigation -->
-
     <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Basic Mathematic</a>
@@ -27,10 +26,7 @@
             <div class="collapse navbar-collapse text-white" id="navbarMenu">
                 <ul class="navbar-nav mr-auto smooth-scroll">
                     <li class="nav-item">
-                        <a class="nav-link" href="#squares">Squares</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sumaAndMulti">Sum And Multi</a>
+                        <a class="nav-link" href="#sumaAndMulti">Calculate</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#fibonacci">Fibonacci</a>
@@ -41,170 +37,114 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#reverseText">Reverse Text</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#logicGame">Logic Game</a>
+                    </li>
                 </ul>
 
-                <!-- socialIcons -->
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link li-ic mr-3" role="button">
-                            <i class="fab fa-lg fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link git-ic mr-3" role="button">
-                            <i class="fab fa-lg fa-github"></i>
-                        </a>
-                    </li>
-                </ul>
             </div>
         </div>
     </nav>
-
 
     <header id="mainHeader">
         <div class="animation"></div>
     </header>
 
     <main>
-        <section id="squaresSumMulti">
-            <div class="container">
-                <div class="row">
+        <section id="Calculate" class="text-center sectionSize">
 
                     <!-- START Sum Of Squares -->
-
-                    <div class="col-6">
                         <h3 class="font-weight-bold py-4">Sum Of Squares</h3>
 
-                        <input type="text" id="Number">
-                        <button type="button" class="btn btn-success" onclick="squared()">Click to Square
+                        <input type="text" id="Number" class="textArea">
+                        <button type="button" class="btn btn-success butttonArea" onclick="squared()">Click to Square
                             Number</button>
                         <p>
                             <b>Result: <b id="squaresMessageOne"></b></b>
                         </p>
-                    </div>
 
                     <!-- FINISH Sum Of Squares -->
                     <!-- START Sum and Multi -->
 
-                    <div class="col-6">
-
                         <h3 class="font-weight-bold py-4">Sum and Multi</h3>
 
-                        <input type="text" class="on" id="firstNumber">
-                        <input type="text" class="on" id="secondNumber">
-                        <input type="text" class="on" id="thirdNumber">
-                        <input type="text" class="on" id="fourthNumber">
+                        <input type="text" class="on textArea" id="firstNumber">
+                        <input type="text" class="on textArea" id="secondNumber">
+                        <input type="text" class="on textArea" id="thirdNumber">
+                        <input type="text" class="on textArea" id="fourthNumber">
 
-                        <button type="button" class="btn btn-success" onclick="finishCount()">Count</button>
+                        <button type="button" class="btn btn-success butttonArea" onclick="finishCount()"</button>Count</button>
                         <p>
                             <b>Result: <b id="sumMessageTwo"></b></b>
                         </p>
                         <p>
                             <b>Result: <b id="multiMessageOne"></b></b>
                         </p>
-                    </div>
 
                     <!-- FINISH Sum and Multi -->
-
-                </div>
-            </div>
         </section>
 
-
-        <section id="sortLetters">
-
-            <div class="container">
-                <div class="row">
-
+        <section id="fibonacci" class="text-center sectionSize">
                     <!-- START Fibonacci -->
-
-                    <div class="col-4">
                         <h3 class="font-weight-bold py-4">Fibonacci Number</h3>
 
-                        <input type="text" name="name" id="newText">
-                        <button type="button" class="btn btn-success" onclick="showNumber()">Fibonacci
+                        <input type="text" name="name" id="newText" class="textArea">
+                        <button type="button" class="btn btn-success butttonArea" onclick="showNumber()">Fibonacci
                             Calculate</button>
                         <p>
                             <b>Result: <b id="fibonacciMessageThree"></b></b>
                         </p>
-                    </div>
 
                     <!-- FINISH Fibonacci -->
-                    <!-- START Sort Letters By Alphabet -->
+        </section>
 
-                    <div class="col-4">
+
+        <section id="sortAlphabet" class="text-center sectionSize">
+                    <!-- START Sort Letters By Alphabet -->
                         <h3 class="font-weight-bold py-4">Sort Alphabet Letters</h3>
 
-                        <input type="text" name="" id="writeNewWord">
-                        <button type="button" class="btn btn-success" onclick="showAlphabetText()">Alphabet
+                        <input type="text" name="" id="writeNewWord" class="textArea">
+                        <button type="button" class="btn btn-success butttonArea" onclick="showAlphabetText()">Alphabet
                             Text</button>
 
                         <p>
                             <b>Result: <b id="alphabetMessageThree"></b></b>
                         </p>
-                    </div>
 
                     <!-- FINISH Sort Letters By Alphabet -->
+        </section>
+
+        <section id="reverseText" class="text-center sectionSize">
 
                     <!-- START Reverse Sort Letters -->
-                    <div class="col-4">
                         <h3 class="font-weight-bold py-4">Show Reverse Text</h3>
 
-                        <input type="text" name="" id="writeWord">
-                        <button type="button" class="btn btn-success" onclick="showText()">Reverse Text</button>
+                        <input type="text" name="" id="writeWord" class="textArea">
+                        <button type="button" class="btn btn-success butttonArea" onclick="showText()">Reverse Text</button>
 
                         <p>
                             <b>Result: <b id="reverseMessageThree"></b></b>
                         </p>
-                    </div>
 
                     <!-- FINISH Reverse Sort Letters -->
-                </div>
-            </div>
+
         </section>
 
-        <section id="downUpModification" class="text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
+        <section id="logicGame" class="text-center sectionSize">
+
+            <h3 class="font-weight-bold py-4">Logic Game</h3>
 
                         <a href="/SubWebsite/subweb_index.html">
                             <div class="main_first_button">
-                                <button type="button" class="main_all_button btn btn-lg btn-success">
+                                <button type="button" class="main_all_button btn btn-lg btn-success butttonArea"
                                     <p>Path to the</p>
                                     <p>new projects: </p>
                                     <p>Element Elevator</p>
                                 </button>
-                            </div>
                         </a>
-                    </div>
-                </div>
-            </div>
         </section>
 
     </main>
-
-
-    <div class="div">1</div>
-    <div class="div">2</div>
-    <div class="div">3</div>
-    <div class="div">4</div>
-    <div class="div">5</div>
-    <div class="div">1</div>
-    <div class="div">2</div>
-    <div class="div">3</div>
-    <div class="div">4</div>
-    <div class="div">5</div>
-    <div class="div">1</div>
-    <div class="div">2</div>
-    <div class="div">3</div>
-    <div class="div">4</div>
-    <div class="div">5</div>
-    <div class="div">1</div>
-    <div class="div">2</div>
-    <div class="div">3</div>
-    <div class="div">4</div>
-    <div class="div">5</div>
 </body>
 
 <!-- jQuery -->

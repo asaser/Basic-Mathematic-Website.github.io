@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    background-color: rgb(180, 42, 42);
+
 }
 
 /*START Counting Down Text */
@@ -40,11 +40,11 @@
     }
 
     40% {
-        content: "All";
+        content: "Basic";
     }
 
     60% {
-        content: "Small";
+        content: "Mathematic";
     }
 
     80% {
@@ -57,3 +57,19 @@
 }
 
 /* FINISH Counting Down Text */
+
+.sectionSize {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-between;
+    margin: 30px 25% 15px 25%;
+}
+
+.textArea {
+    margin: 0px 10% 10px 10%;
+}
+
+.butttonArea {
+    margin: 25px 35% 15px 35%;
+}
