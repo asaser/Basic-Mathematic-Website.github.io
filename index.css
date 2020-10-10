@@ -47,23 +47,23 @@
 
 
 .calculateStyle {
-    background-color: rgba(177, 117, 39, 0.809)
+    background-image: linear-gradient(to top left, #91d6fd, #04409b);
 }
 
 .fibonacciStyle {
-    background-color: rgba(58, 23, 198, 0.408);
+    background-image: linear-gradient(to top left, #5b912f, #48e4a6);
 }
 
 .modificationStyle {
-    background-color: rgba(177, 117, 39, 0.809)
+    background-image: linear-gradient(to top left, #91d6fd, #04409b);
 }
 
 .logicGameStyle {
-    background-color: rgba(58, 23, 198, 0.408);
+    background-image: linear-gradient(to top left, #5b912f, #48e4a6);
 }
 
 .calculatorStyle {
-    background-color: rgba(177, 117, 39, 0.809)
+    background-image: linear-gradient(to top left, #91d6fd, #04409b);
 }
 
 
@@ -95,34 +95,33 @@
 
 /* FINISH Counting Down Text */
 
-
 /* START Calculator */
 
+
 .main {
-    background-image: linear-gradient(to top left, #91d6fd, #04409b);
-    height: 100vh;
+    display: flex;
+    align-content: center;    
+    justify-content: center;
+    height: 70vh;
 }
 
 .calculator {
     position: absolute;
-    bottom: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
     border: 50px ridge #8f6f57;
     border-radius: 50px;
-
 }
 
 .forms {
+    display: flex;
+    position: absolute;
     padding-bottom: 2px;
 }
 
 .forms .forms_score {
     position: relative;
-    width: 548px;
+    width: 455px;
     padding: 25px;
     margin: 3px 2px 3px 2px;
-    /* border-style: outset; */
     background-color: #ddc1a0;
 }
 
@@ -130,9 +129,14 @@
 position: relative;
 }
 
+.digits {
+    position: absolute;
+    margin-top: 18%;
+}
+
 .digits .button {
-    height: 90px;
-    width: 90px;
+    height: 75px;
+    width: 75px;
     border-style: solid;
     border-color: #251717;
     margin: 1px;
@@ -143,13 +147,8 @@ position: relative;
     justify-items: center;
 }
 
-/* .digits .columns {
-    height: 92px;
-} */
-
-
 .digits .long {
-    width: 182px;
+    width: 150px;
 }
 
 .digits .button_darker {

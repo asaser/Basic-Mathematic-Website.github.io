@@ -140,72 +140,82 @@
             </a>
         </section>
 
-        <section id="calculator" class="text-center sectionSize logicGameStyle">
-            
+        <section id="calculator" class="text-center sectionSize calculatorStyle">
+
             <h3 class="font-weight-bold py-4">Calculator</h3>
 
             <div class="main">
                 <div class="calculator">
+
                     <form class="forms" name="form">
                         <input id="number_score" class="forms_score" type="text" readonly>
                     </form>
 
-                    <table class="digits">
-
-                        <tr>
-                            <td><input class="button button_custom" type="button" value="&Scy;" onclick="clean()"></td>
-                            <td><input class="button button_custom" type="button" value="/" onclick="show('/')"></td>
-                            <td><input class="button button_custom" type="button" value="*" onclick="show('*')"></td>
-                            <td><input class="button button_custom" type="button" value="-" onclick="show('-')"></td>
-                            <td><input class="button button_custom" type="button" value="&#40;" onclick="show('&#40;')">
-                            </td>
-                            <td><input class="button button_custom" type="button" value="&#41;" onclick="show('&#41;')">
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td><input class="button button_lighter" type="button" value="7" onclick="show('7')"></td>
-                            <td><input class="button button_lighter" type="button" value="8" onclick="show('8')"></td>
-                            <td><input class="button button_lighter" type="button" value="9" onclick="show('9')"></td>
-                            <td><input class="button button_custom" type="button" value="+" onclick="show('+')"></td>
-                            <td><input class="button button_custom" type="button" value="&slarr;" onclick="undo()"></td>
-                            <td><input class="button button_custom" type="button" value="&radic;" onclick="element()">
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td><input class="button button_lighter" type="button" value="4" onclick="show('4')"></td>
-                            <td><input class="button button_lighter" type="button" value="5" onclick="show('5')"></td>
-                            <td><input class="button button_lighter" type="button" value="6" onclick="show('6')"></td>
-                            <td><input class="button button_custom" type="button" value="e" onclick="show('2.718')">
-                            </td>
-                            <td><input class="button button_custom" type="button" value="%" onclick="percent()"></td>
-                            <td><input class="button button_custom" type="button" value="X&sup2;" onclick="squared()">
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td><input class="button button_lighter" type="button" value="1" onclick="show('1')"></td>
-                            <td><input class="button button_lighter" type="button" value="2" onclick="show('2')"></td>
-                            <td><input class="button button_lighter" type="button" value="3" onclick="show('3')"></td>
-                            <td><input class="button button_custom" type="button" value="&#960;" onclick="show('3.14')">
-                            </td>
-                            <td><input class="button button_darker" type="button" value="sin" onclick="sinus()"></td>
-                            <td><input class="button button_darker" type="button" value="cos" onclick="cosinus()"></td>
-                        </tr>
-
-                        <tr>
-                            <td><input class="button button_lighter" type="button" value="0" onclick="show('0')"></td>
-                            <td colspan="2"><input class="button long button_darker" type="button" value="="
-                                    onclick="equal()"></td>
-                            <td><input class="button button_custom" type="button" value="." onclick="show('.')"></td>
-                            <td><input class="button button_darker" type="button" value="tg" onclick="tangens()"></td>
-                            <td><input class="button button_darker" type="button" value="ctg" onclick="cotangens()">
-                            </td>
-                        </tr>
-
-                    </table>
                 </div>
+                <table class="digits">
+
+                    <tr>
+                        <td><input class="button button_custom" type="button" value="&Scy;" onclick="clean()"></td>
+                        <td><input class="button button_custom" type="button" value="/" onclick="show('/')">
+                        </td>
+                        <td><input class="button button_custom" type="button" value="*" onclick="show('*')">
+                        </td>
+                        <td><input class="button button_custom" type="button" value="-" onclick="show('-')">
+                        </td>
+                        <td><input class="button button_custom" type="button" value="&#40;" onclick="show('&#40;')">
+                        </td>
+                        <td><input class="button button_custom" type="button" value="&#41;" onclick="show('&#41;')">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input class="button button_lighter" type="button" value="7" onclick="show('7')"></td>
+                        <td><input class="button button_lighter" type="button" value="8" onclick="show('8')"></td>
+                        <td><input class="button button_lighter" type="button" value="9" onclick="show('9')"></td>
+                        <td><input class="button button_custom" type="button" value="+" onclick="show('+')">
+                        </td>
+                        <td><input class="button button_custom" type="button" value="&slarr;" onclick="undo()"></td>
+                        <td><input class="button button_custom" type="button" value="&radic;" onclick="element()">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input class="button button_lighter" type="button" value="4" onclick="show('4')"></td>
+                        <td><input class="button button_lighter" type="button" value="5" onclick="show('5')"></td>
+                        <td><input class="button button_lighter" type="button" value="6" onclick="show('6')"></td>
+                        <td><input class="button button_custom" type="button" value="e" onclick="show('2.718')">
+                        </td>
+                        <td><input class="button button_custom" type="button" value="%" onclick="percent()">
+                        </td>
+                        <td><input class="button button_custom" type="button" value="X&sup2;" onclick="squared()">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input class="button button_lighter" type="button" value="1" onclick="show('1')"></td>
+                        <td><input class="button button_lighter" type="button" value="2" onclick="show('2')"></td>
+                        <td><input class="button button_lighter" type="button" value="3" onclick="show('3')"></td>
+                        <td><input class="button button_custom" type="button" value="&#960;" onclick="show('3.14')">
+                        </td>
+                        <td><input class="button button_darker" type="button" value="sin" onclick="sinus()">
+                        </td>
+                        <td><input class="button button_darker" type="button" value="cos" onclick="cosinus()"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input class="button button_lighter" type="button" value="0" onclick="show('0')"></td>
+                        <td colspan="2"><input class="button long button_darker" type="button" value="="
+                                onclick="equal()"></td>
+                        <td><input class="button button_custom" type="button" value="." onclick="show('.')">
+                        </td>
+                        <td><input class="button button_darker" type="button" value="tg" onclick="tangens()"></td>
+                        <td><input class="button button_darker" type="button" value="ctg" onclick="cotangens()">
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+            </div>
             </div>
 
         </section>
