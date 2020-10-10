@@ -100,24 +100,30 @@
 
 .main {
     display: flex;
+    flex-wrap: wrap;
     align-content: center;    
     justify-content: center;
     height: 70vh;
 }
 
 .calculator {
-    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
     border: 50px ridge #8f6f57;
     border-radius: 50px;
 }
 
 .forms {
     display: flex;
+    flex-wrap: wrap;
     position: absolute;
     padding-bottom: 2px;
 }
 
-.forms .forms_score {
+.forms_score {
+    display: flex;
+    flex-direction: row;
     position: relative;
     width: 455px;
     padding: 25px;
@@ -125,41 +131,40 @@
     background-color: #ddc1a0;
 }
 
-.calculator .digits {
-position: relative;
-}
-
 .digits {
+    display: flex;
     position: relative;
     margin-top: 18%;
 }
 
-.digits .button {
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: inherit;
     height: 75px;
     width: 75px;
+    align-content: center;
+    justify-content: center;
     border-style: solid;
     border-color: #251717;
     margin: 1px;
-}
-
-.button {
     text-align: center;
     justify-items: center;
 }
 
-.digits .long {
+.long {
     width: 150px;
 }
 
-.digits .button_darker {
+.button_darker {
     background-color:#856244;
 }
 
-.digits .button_lighter {
+.button_lighter {
     background-color: #c79b75;
 }
 
-.digits .button_custom {
+.button_custom {
     background-color: #fff2e7;
 }
 
