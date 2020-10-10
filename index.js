@@ -1,3 +1,13 @@
+// START Navbar
+$(function () {
+    $(document).scroll(function () {
+        var $nav = $(".fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      });
+  });
+// FINISH Navbar
+
+
 // START Sum Of Squares
 
 function squared() {

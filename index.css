@@ -3,6 +3,19 @@
     padding: 0px;
 }
 
+/* START Navbar */
+.fixed-top.scrolled {
+    background-color: rgba(112, 219, 255, 0.802);
+    transition: background-color 800ms linear;
+}
+
+.fixed-top.scrolled .nav-item .nav-link {
+    color: rgba(62, 28, 28, 0.768);
+}
+
+
+/* FINISH Navbar */
+
 /*START Counting Down Text */
 
 .sectionSize {
