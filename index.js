@@ -3,18 +3,19 @@ $(function () {
     $(document).scroll(function () {
         var $nav = $(".fixed-top");
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-      });
-  });
+    });
+});
 // FINISH Navbar
 
 
 // START Sum Of Squares
 
-function squared() {
+function squareNumber() {
     let result = document.getElementById("Number").value;
     let squar = result * result;
     document.getElementById("squaresMessageOne").innerHTML = squar;
 }
+
 
 // FINISH Sum Of Squares
 
@@ -38,8 +39,7 @@ function finishCount() {
         let multi = Number(writeNumber[1]) * Number(writeNumber[2]) * Number(writeNumber[3]);
         document.getElementById("multiMessageTwo").innerHTML = multi;
 
-    } 
-    else if (Number(writeNumber[1]) == '') {
+    } else if (Number(writeNumber[1]) == '') {
         let multi = Number(writeNumber[0]) * Number(writeNumber[2]) * Number(writeNumber[3]);
         document.getElementById("multiMessageTwo").innerHTML = multi;
 
@@ -51,46 +51,46 @@ function finishCount() {
         let multi = Number(writeNumber[0]) * Number(writeNumber[1]) * Number(writeNumber[2]);
         document.getElementById("multiMessageTwo").innerHTML = multi;
 
-    } else if (Number(writeNumber[0]) =='' && Number(writeNumber[1]) == '') {
+    } else if (Number(writeNumber[0]) == '' && Number(writeNumber[1]) == '') {
         let multi = Number(writeNumber[2]) * Number(writeNumber[3]);
         document.getElementById("multiMessageTwo").innerHTML = multi;
 
-    // } else if (Number(writeNumber[0])  && Number(writeNumber[2]) == '') {
-    //     let multi = Number(writeNumber[1]) * Number(writeNumber[3]);
-    //     document.getElementById("multiMessageTwo").innerHTML = multi;
+        // } else if (Number(writeNumber[0])  && Number(writeNumber[2]) == '') {
+        //     let multi = Number(writeNumber[1]) * Number(writeNumber[3]);
+        //     document.getElementById("multiMessageTwo").innerHTML = multi;
 
-    // } else if (Number(writeNumber[0]) && Number(writeNumber[3]) == '') {
-    //     let multi = Number(writeNumber[1]) * Number(writeNumber[2]);
-    //     document.getElementById("multiMessageTwo").innerHTML = multi;
+        // } else if (Number(writeNumber[0]) && Number(writeNumber[3]) == '') {
+        //     let multi = Number(writeNumber[1]) * Number(writeNumber[2]);
+        //     document.getElementById("multiMessageTwo").innerHTML = multi;
 
-    // } else if (Number(writeNumber[0]) && Number(writeNumber[1]) && Number(writeNumber[2]) == '') {
-    //     let multi = Number(writeNumber[3]);
-    //     document.getElementById("multiMessageTwo").innerHTML = multi;
+        // } else if (Number(writeNumber[0]) && Number(writeNumber[1]) && Number(writeNumber[2]) == '') {
+        //     let multi = Number(writeNumber[3]);
+        //     document.getElementById("multiMessageTwo").innerHTML = multi;
 
-    // } else if (Number(writeNumber[0]) && Number(writeNumber[1]) && Number(writeNumber[3]) == '') {
-    //     let multi = Number(writeNumber[2]);
-    //     document.getElementById("multiMessageTwo").innerHTML = multi;
+        // } else if (Number(writeNumber[0]) && Number(writeNumber[1]) && Number(writeNumber[3]) == '') {
+        //     let multi = Number(writeNumber[2]);
+        //     document.getElementById("multiMessageTwo").innerHTML = multi;
 
-    //     document.getElementById("multiMessageTwo").innerHTML = multi;
-    // } else if (Number(writeNumber[1]) && Number(writeNumber[2]) && Number(writeNumber[3]) == '') {
-    //     let multi = Number(writeNumber[0]);
-    //     document.getElementById("multiMessageTwo").innerHTML = multi;
+        //     document.getElementById("multiMessageTwo").innerHTML = multi;
+        // } else if (Number(writeNumber[1]) && Number(writeNumber[2]) && Number(writeNumber[3]) == '') {
+        //     let multi = Number(writeNumber[0]);
+        //     document.getElementById("multiMessageTwo").innerHTML = multi;
 
-    // } else if (Number(writeNumber[1]) && Number(writeNumber[2]) == '') {
-    //     let multi = Number(writeNumber[0]) * Number(writeNumber[3]);
-    //     document.getElementById("multiMessageTwo").innerHTML = multi;
+        // } else if (Number(writeNumber[1]) && Number(writeNumber[2]) == '') {
+        //     let multi = Number(writeNumber[0]) * Number(writeNumber[3]);
+        //     document.getElementById("multiMessageTwo").innerHTML = multi;
 
-    // } else if (Number(writeNumber[1]) && Number(writeNumber[3]) == '') {
-    //     let multi = Number(writeNumber[0]) * Number(writeNumber[2]);
-    //     document.getElementById("multiMessageTwo").innerHTML = multi;
+        // } else if (Number(writeNumber[1]) && Number(writeNumber[3]) == '') {
+        //     let multi = Number(writeNumber[0]) * Number(writeNumber[2]);
+        //     document.getElementById("multiMessageTwo").innerHTML = multi;
 
-    // } else if (Number(writeNumber[2]) && Number(writeNumber[3])== '') {
-    //     let multi = Number(writeNumber[2]) * Number(writeNumber[3]);
-    //     document.getElementById("multiMessageTwo").innerHTML = multi;
+        // } else if (Number(writeNumber[2]) && Number(writeNumber[3])== '') {
+        //     let multi = Number(writeNumber[2]) * Number(writeNumber[3]);
+        //     document.getElementById("multiMessageTwo").innerHTML = multi;
 
-    // } else if ( Number(writeNumber[0]) && Number(writeNumber[1]) && Number(writeNumber[2]) && Number(writeNumber[3]) == '') {
-    //     let multi = 0;
-    //     document.getElementById("multiMessageTwo").innerHTML = multi;
+        // } else if ( Number(writeNumber[0]) && Number(writeNumber[1]) && Number(writeNumber[2]) && Number(writeNumber[3]) == '') {
+        //     let multi = 0;
+        //     document.getElementById("multiMessageTwo").innerHTML = multi;
 
     } else {
         let multi = Number(writeNumber[0]) * Number(writeNumber[1]) * Number(writeNumber[2]) * Number(writeNumber[3]);

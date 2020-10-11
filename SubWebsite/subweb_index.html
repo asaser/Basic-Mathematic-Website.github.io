@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/SubWebsite/subweb_index.css">
 </head>
+
 <body>
-                            <!-- START Elements Elevator -->
+    <!-- START Elements Elevator -->
+<div class="toggle_button">
+    <button id="1">Toggle Number Field</button>
+    <button id="2">Toggle Number Field</button>
+    <button id="3">Toggle Number Field</button>
+    <button id="4">Toggle Number Field</button>
+    <button id="5">Toggle Number Field</button>
+    <button id="6">Toggle Number Field</button>
+    <button id="7">Toggle Number Field</button>
+    <button id="8">Toggle Number Field</button>
+    <button id="9">Toggle Number Field</button>
+    <button id="10">Toggle Number Field</button>
+
+</div>
+
+    <button type="button" class="Elements_Up">Move up</button>
+
+    <p class="color red">1 + </p>
+    <p class="color orange"><input type="text" maxlength = "1" class="sizeText"> - </p>
+    <p class="color yellow">3 + </p>
+    <p class="color green">-</p>
+    <p class="color blue">5</p>
+    <p class="color darkblue">6 - </p>
+    <p class="color purple"><input type="text" maxlength = "1" class="sizeText"> + </p>
+    <p class="color darkblue">8 + </p>
+    <p class="color green">9 - </p>
+    <p class="color green">10 + </p>
 
 
-                            <button type="button" class="Elements_Up">Move up</button>
-                            <div class="color red">a</div>
-                            <div class="color orange">w</div>
-                            <div class="color yellow">u</div>
-                            <div class="color green">y</div>
-                            <div class="color blue">t</div>
-                            <div class="color darkblue">r</div>
-                            <div class="color purple">e</div>
-                            <button type="button" class="Elements_Down">Move down</button>
-    
-                            <!-- FINISH Elements Elevator -->
-    
+    <button type="button" class="Elements_Down">Move down</button>
+
+    <div id="generateDigital" class="generate_digital">
+        <button type="button" class="generate_random_digital" onclick="startGenerate()"></button>
+    </div>
+
+    <i>
+        <b>Result: <b id="showGenerateDigital"></b></b>
+    </i>
+
+    <!-- FINISH Elements Elevator -->
+
 </body>
 
 <!-- jQuery -->
@@ -40,4 +68,5 @@
 </script>
 
 <script src="/SubWebsite/subweb_index.js"></script>
+
 </html>

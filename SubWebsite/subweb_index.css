@@ -1,49 +1,77 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgba(161, 214, 100, 0.612);
+}
+
 /* START Elements Elevator */
 
+.toggle_button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
 .Elements_Up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 30px;
     width: 100%;
     margin-bottom: 20px;
     margin-top: 20px;
+    border: 2px solid #5b912f;
+    border-radius: 50px;
 }
 
 .Elements_Down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 30px;
     width: 100%;
     margin-top: 20px;
+    border: 2px solid #5b912f;
+    border-radius: 50px;
 }
 
 .color {
-    color: transparent;
-    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3px 200px 3px 200px;
+    height: 50px;
+    border: 2px solid #5b912f;
+    border-radius: 50px;
 }
 
 .red {
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.551);
 }
 
 .orange {
-    background-color: orange;
+    background-color: rgba(255, 166, 0, 0.503);
 }
 
 .yellow {
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, 0.517);
 }
 
 .green {
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.496);
 }
 
 .blue {
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.462);
 }
 
 .darkblue {
-    background-color: darkblue;
+    background-color: rgba(0, 0, 139, 0.387);
 }
 
 .purple {
-    background-color: purple;
+    background-color: rgba(128, 0, 128, 0.483);
 }
 
 /* FINISH Elements Elevator */
