@@ -16,7 +16,6 @@ function squareNumber() {
     document.getElementById("squaresMessageOne").innerHTML = squar;
 }
 
-
 // FINISH Sum Of Squares
 
 //////////////////////////////////////////////////////////////////////////////
@@ -35,70 +34,57 @@ function finishCount() {
     document.getElementById("sumMessageOne").innerHTML = sum;
 
 
-    if (Number(writeNumber[0]) == '') {
-        let multi = Number(writeNumber[1]) * Number(writeNumber[2]) * Number(writeNumber[3]);
+    if ((Number(writeNumber[0]) && Number(writeNumber[1]) && Number(writeNumber[2]) && Number(writeNumber[3])) != '') {
+        let multi = (Number(writeNumber[0]) * Number(writeNumber[1]) * Number(writeNumber[2]) * Number(writeNumber[3]) );
         document.getElementById("multiMessageTwo").innerHTML = multi;
-
-    } else if (Number(writeNumber[1]) == '') {
-        let multi = Number(writeNumber[0]) * Number(writeNumber[2]) * Number(writeNumber[3]);
+    } else if ((Number(writeNumber[1]) && Number(writeNumber[2]) && Number(writeNumber[3])) != '') {
+        let multi = (Number(writeNumber[1]) * Number(writeNumber[2]) * Number(writeNumber[3]) );
         document.getElementById("multiMessageTwo").innerHTML = multi;
-
-    } else if (Number(writeNumber[2]) == '') {
-        let multi = Number(writeNumber[0]) * Number(writeNumber[1]) * Number(writeNumber[3]);
+    } else if ((Number(writeNumber[0]) && Number(writeNumber[2]) && Number(writeNumber[3])) != '') {
+        let multi = (Number(writeNumber[0]) * Number(writeNumber[2]) * Number(writeNumber[3]) );
         document.getElementById("multiMessageTwo").innerHTML = multi;
-
-    } else if (Number(writeNumber[3]) == '') {
-        let multi = Number(writeNumber[0]) * Number(writeNumber[1]) * Number(writeNumber[2]);
+    } else if ((Number(writeNumber[0]) && Number(writeNumber[1]) && Number(writeNumber[3])) != '') {
+        let multi = (Number(writeNumber[0]) * Number(writeNumber[1]) * Number(writeNumber[3]) );
         document.getElementById("multiMessageTwo").innerHTML = multi;
-
-    } else if (Number(writeNumber[0]) == '' && Number(writeNumber[1]) == '') {
-        let multi = Number(writeNumber[2]) * Number(writeNumber[3]);
+    } else if ((Number(writeNumber[0]) && Number(writeNumber[1]) && Number(writeNumber[2])) != '') {
+        let multi = (Number(writeNumber[0]) * Number(writeNumber[1]) * Number(writeNumber[2]) );
         document.getElementById("multiMessageTwo").innerHTML = multi;
-
-        // } else if (Number(writeNumber[0])  && Number(writeNumber[2]) == '') {
-        //     let multi = Number(writeNumber[1]) * Number(writeNumber[3]);
-        //     document.getElementById("multiMessageTwo").innerHTML = multi;
-
-        // } else if (Number(writeNumber[0]) && Number(writeNumber[3]) == '') {
-        //     let multi = Number(writeNumber[1]) * Number(writeNumber[2]);
-        //     document.getElementById("multiMessageTwo").innerHTML = multi;
-
-        // } else if (Number(writeNumber[0]) && Number(writeNumber[1]) && Number(writeNumber[2]) == '') {
-        //     let multi = Number(writeNumber[3]);
-        //     document.getElementById("multiMessageTwo").innerHTML = multi;
-
-        // } else if (Number(writeNumber[0]) && Number(writeNumber[1]) && Number(writeNumber[3]) == '') {
-        //     let multi = Number(writeNumber[2]);
-        //     document.getElementById("multiMessageTwo").innerHTML = multi;
-
-        //     document.getElementById("multiMessageTwo").innerHTML = multi;
-        // } else if (Number(writeNumber[1]) && Number(writeNumber[2]) && Number(writeNumber[3]) == '') {
-        //     let multi = Number(writeNumber[0]);
-        //     document.getElementById("multiMessageTwo").innerHTML = multi;
-
-        // } else if (Number(writeNumber[1]) && Number(writeNumber[2]) == '') {
-        //     let multi = Number(writeNumber[0]) * Number(writeNumber[3]);
-        //     document.getElementById("multiMessageTwo").innerHTML = multi;
-
-        // } else if (Number(writeNumber[1]) && Number(writeNumber[3]) == '') {
-        //     let multi = Number(writeNumber[0]) * Number(writeNumber[2]);
-        //     document.getElementById("multiMessageTwo").innerHTML = multi;
-
-        // } else if (Number(writeNumber[2]) && Number(writeNumber[3])== '') {
-        //     let multi = Number(writeNumber[2]) * Number(writeNumber[3]);
-        //     document.getElementById("multiMessageTwo").innerHTML = multi;
-
-        // } else if ( Number(writeNumber[0]) && Number(writeNumber[1]) && Number(writeNumber[2]) && Number(writeNumber[3]) == '') {
-        //     let multi = 0;
-        //     document.getElementById("multiMessageTwo").innerHTML = multi;
-
+    } else if ((Number(writeNumber[1]) && Number(writeNumber[2]) && Number(writeNumber[3])) != '') {
+        let multi = (Number(writeNumber[1]) * Number(writeNumber[2]) * Number(writeNumber[3]) );
+        document.getElementById("multiMessageTwo").innerHTML = multi;
+    } else if ((Number(writeNumber[0]) && Number(writeNumber[1])) != '') {
+        let multi = (Number(writeNumber[0]) * Number(writeNumber[1]));
+        document.getElementById("multiMessageTwo").innerHTML = multi;
+    } else if ((Number(writeNumber[0]) && Number(writeNumber[2])) != '') {
+        let multi = (Number(writeNumber[0]) * Number(writeNumber[2]));
+        document.getElementById("multiMessageTwo").innerHTML = multi;
+    } else if ((Number(writeNumber[0]) && Number(writeNumber[3])) != '') {
+        let multi = (Number(writeNumber[0]) * Number(writeNumber[3]));
+        document.getElementById("multiMessageTwo").innerHTML = multi;
+    } else if ((Number(writeNumber[1]) && Number(writeNumber[2])) != '') {
+        let multi = (Number(writeNumber[1]) * Number(writeNumber[2]));
+        document.getElementById("multiMessageTwo").innerHTML = multi;
+    } else if ((Number(writeNumber[1]) && Number(writeNumber[3])) != '') {
+        let multi = (Number(writeNumber[1]) * Number(writeNumber[3]));
+        document.getElementById("multiMessageTwo").innerHTML = multi;
+    } else if ((Number(writeNumber[2]) && Number(writeNumber[3])) != '') {
+        let multi = (Number(writeNumber[2]) * Number(writeNumber[3]));
+        document.getElementById("multiMessageTwo").innerHTML = multi;
+    } else if (Number(writeNumber[0]) != '') {
+        let multi = (Number(writeNumber[0]));
+        document.getElementById("multiMessageTwo").innerHTML = multi;
+    } else if (Number(writeNumber[1]) != '') {
+        let multi = (Number(writeNumber[1]));
+        document.getElementById("multiMessageTwo").innerHTML = multi;
+    } else if (Number(writeNumber[2]) != '') {
+        let multi = (Number(writeNumber[2]));
+        document.getElementById("multiMessageTwo").innerHTML = multi;
+    } else if (Number(writeNumber[3]) != '') {
+        let multi = (Number(writeNumber[3]));
+        document.getElementById("multiMessageTwo").innerHTML = multi;
     } else {
-        let multi = Number(writeNumber[0]) * Number(writeNumber[1]) * Number(writeNumber[2]) * Number(writeNumber[3]);
-        document.getElementById("multiMessageTwo").innerHTML = multi;
+        alert("Please write Number");
     }
-
-    // let multi = Number(writeNumber[0]) * Number(writeNumber[1]) * Number(writeNumber[2]) * Number(writeNumber[3]);
-    // document.getElementById("multiMessageTwo").innerHTML = multi;
 }
 
 // FINISH Sum and Multi

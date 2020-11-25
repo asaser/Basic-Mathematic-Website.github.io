@@ -5,7 +5,7 @@ $(".Elements_Up").click(function() {
     $("p").remove("pierwsza");
     $("p:first").addClass("pierwsza")
   });
-  
+
   $(".Elements_Down").click(function() {
     $("p:first").insertAfter("p:last");
     $("p").remove("drugi");

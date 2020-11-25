@@ -26,6 +26,9 @@
             <div class="collapse navbar-collapse text-white" id="navbarMenu">
                 <ul class="navbar-nav mr-auto smooth-scroll navbar_scroll font-weight-bold">
                     <li class="nav-item">
+                        <a class="nav-link" href="#logicGame">Logic Game</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#calculate">Calculate</a>
                     </li>
                     <li class="nav-item">
@@ -33,9 +36,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#modification">Modification</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#logicGame">Logic Game</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#calculator">Calculator</a>
@@ -51,6 +51,21 @@
     </header>
 
     <main>
+
+        <section id="logicGame" class="text-center sectionSize logicGameStyle">
+
+            <h3 class="font-weight-bold py-4">Logic Game</h3>
+
+            <a href="/SubWebsite/subweb_index.html">
+                <div class="main_first_button">
+                    <button type="button" class="main_all_button btn btn-lg btn-success butttonArea"><b> Path to the</b>
+                        <p><b>new projects: </b></p>
+                        <b>Digital Game</b>
+                    </button>
+            </a>
+        </section>
+
+
         <section id="calculate" class="text-center sectionSize calculateStyle">
 
             <!-- START Sum Of Squares -->
@@ -74,10 +89,10 @@
 
             <button type="button" class="btn btn-success butttonArea" onclick="finishCount()">Count</button>
             <p>
-                <b>Result: <b id="sumMessageOne"></b></b>
+                <b>SUM Result: <b id="sumMessageOne"></b></b>
             </p>
             <p>
-                <b>Result: <b id="multiMessageTwo"></b></b>
+                <b>MULTI Result: <b id="multiMessageTwo"></b></b>
             </p>
 
             <!-- FINISH Sum and Multi -->
@@ -123,20 +138,6 @@
             </p>
 
             <!-- FINISH Reverse Sort Letters -->
-        </section>
-
-
-        <section id="logicGame" class="text-center sectionSize logicGameStyle">
-
-            <h3 class="font-weight-bold py-4">Logic Game</h3>
-
-            <a href="/SubWebsite/subweb_index.html">
-                <div class="main_first_button">
-                    <button type="button" class="main_all_button btn btn-lg btn-success butttonArea" <p>Path to the</p>
-                        <p>new projects: </p>
-                        <p>Element Elevator</p>
-                    </button>
-            </a>
         </section>
 
         <section id="calculator" class="text-center sectionSize calculatorStyle">
@@ -235,6 +236,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 </script>
 
-<script src="/index.js"></script>
+<script src="./index.js"></script>
 
 </html>

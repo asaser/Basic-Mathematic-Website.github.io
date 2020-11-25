@@ -6,7 +6,7 @@
 /* START Navbar */
 .fixed-top.scrolled {
     background-color: rgba(112, 219, 255, 0.802);
-    transition: background-color 800ms linear;
+    transition: background-color 500ms linear;
 }
 
 .fixed-top.scrolled .nav-item .nav-link {
